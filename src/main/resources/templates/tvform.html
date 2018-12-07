@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#"
+      th:action="@{/tvform}"
+      th:object="${tvshow}"
+      method="post">
+    Id :<input type="number" th:field="*{id}" />
+    <span th:if="${fields.hasErrors('id')}"
+          th:errors="*{id}"></span><br/>
+    Name :<input type="number" th:field="*{id}" />
+    <span th:if="${fields.hasErrors('name')}"
+          th:errors="*{id}"></span><br/>
+    Type :<input type="number" th:field="*{id}" />
+    <span th:if="${fields.hasErrors('type')}"
+          th:errors="*{id}"></span><br/>
+    Description :<input type="number" th:field="*{id}" />
+    <span th:if="${fields.hasErrors('description')}"
+          th:errors="*{id}"></span>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
